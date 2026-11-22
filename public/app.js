@@ -372,6 +372,7 @@ function bindSearch(field) {
   function suggest() {
     if (endpoints[field]) return close();
     const query = input.value.trim().toLowerCase();
+    if (!query) return close();
     const places = city.nodes.filter((node) => node.kind === "place");
     const priority = (node) => node.name.toLowerCase() === query ? 0
       : node.name.toLowerCase().startsWith(query) ? 1 : 2;
@@ -426,7 +427,9 @@ function bindSearch(field) {
       selected = (selected < 0 && increment < 0) ? matches.length - 1 :
         (selected + increment + matches.length) % matches.length;
       [...list.children].forEach((item, index) => item.setAttribute("aria-selected", String(index === selected)));
-      input.setAttribute("aria-activedescendant", list.children[selected].id);
+      const active = list.children[selected];
+      input.setAttribute("aria-activedescendant", active.id);
+      active.scrollIntoView({ block: "nearest" });
     } else if (event.key === "Enter") {
       event.preventDefault();
       choose(matches[Math.max(0, selected)]);
