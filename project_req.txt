@@ -1,0 +1,9 @@
+Route Optimization System (Smart Navigation)
+Objective:
+Create a GPS-based route optimization system identifying the shortest/fastest path.
+Technologies:
+Graph Search, A* Algorithm.
+Tasks:
+Model a city map as nodes (intersections) and edges (roads with traffic weights). Implement the search algorithm to find the optimal route.
+Deliverable:
+Code outputting the most efficient path between two given city nodes.
