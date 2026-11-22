@@ -1,0 +1,2000 @@
+{
+  "id": "sandhani-city",
+  "name": "Sandhani City",
+  "crs": "EPSG:4326",
+  "bounds": {
+    "south": 12.959,
+    "west": 77.564,
+    "north": 12.988,
+    "east": 77.602
+  },
+  "vmax_kph": 100,
+  "bands": {
+    "night": {
+      "local": 1.05,
+      "arterial": 1,
+      "highway": 0.95,
+      "bridge": 1
+    },
+    "midday": {
+      "local": 0.85,
+      "arterial": 0.75,
+      "highway": 0.9,
+      "bridge": 0.8
+    },
+    "peak_am": {
+      "local": 0.7,
+      "arterial": 0.5,
+      "highway": 0.65,
+      "bridge": 0.45
+    },
+    "peak_pm": {
+      "local": 0.65,
+      "arterial": 0.45,
+      "highway": 0.6,
+      "bridge": 0.35
+    }
+  },
+  "nodes": [
+    {
+      "id": "n01",
+      "name": "Harbor Station",
+      "aliases": [
+        "station",
+        "rail"
+      ],
+      "lat": 12.97008374703754,
+      "lon": 77.57072821396407,
+      "kind": "place"
+    },
+    {
+      "id": "n02",
+      "name": "East Wharf",
+      "aliases": [
+        "wharf"
+      ],
+      "lat": 12.961,
+      "lon": 77.567,
+      "kind": "place"
+    },
+    {
+      "id": "n03",
+      "name": "Intersection 03",
+      "aliases": [],
+      "lat": 12.961179339022726,
+      "lon": 77.57079326530616,
+      "kind": "junction"
+    },
+    {
+      "id": "n04",
+      "name": "Docklands",
+      "aliases": [
+        "docks"
+      ],
+      "lat": 12.96124989340076,
+      "lon": 77.57449563491899,
+      "kind": "place"
+    },
+    {
+      "id": "n05",
+      "name": "Intersection 05",
+      "aliases": [],
+      "lat": 12.961168865795138,
+      "lon": 77.57805896280999,
+      "kind": "junction"
+    },
+    {
+      "id": "n06",
+      "name": "Old Town",
+      "aliases": [
+        "old town"
+      ],
+      "lat": 12.960985406464143,
+      "lon": 77.58150049644503,
+      "kind": "place"
+    },
+    {
+      "id": "n07",
+      "name": "Intersection 07",
+      "aliases": [],
+      "lat": 12.960810799376173,
+      "lon": 77.58489476503169,
+      "kind": "junction"
+    },
+    {
+      "id": "n08",
+      "name": "Intersection 08",
+      "aliases": [],
+      "lat": 12.960750958847791,
+      "lon": 77.58833852726828,
+      "kind": "junction"
+    },
+    {
+      "id": "n09",
+      "name": "Intersection 09",
+      "aliases": [],
+      "lat": 12.960842183340532,
+      "lon": 77.59190526421621,
+      "kind": "junction"
+    },
+    {
+      "id": "n10",
+      "name": "Intersection 10",
+      "aliases": [],
+      "lat": 12.961029137301212,
+      "lon": 77.59561062000864,
+      "kind": "junction"
+    },
+    {
+      "id": "n11",
+      "name": "West Docks",
+      "aliases": [
+        "docks"
+      ],
+      "lat": 12.961198416965962,
+      "lon": 77.59940504417014,
+      "kind": "place"
+    },
+    {
+      "id": "n12",
+      "name": "Intersection 12",
+      "aliases": [],
+      "lat": 12.966210367746202,
+      "lon": 77.56725244129544,
+      "kind": "junction"
+    },
+    {
+      "id": "n13",
+      "name": "Intersection 13",
+      "aliases": [],
+      "lat": 12.96624346190772,
+      "lon": 77.57089749944313,
+      "kind": "junction"
+    },
+    {
+      "id": "n14",
+      "name": "Intersection 14",
+      "aliases": [],
+      "lat": 12.966128875342955,
+      "lon": 77.57440263895415,
+      "kind": "junction"
+    },
+    {
+      "id": "n15",
+      "name": "Mariner Hospital",
+      "aliases": [
+        "hospital",
+        "medical"
+      ],
+      "lat": 12.965936114724492,
+      "lon": 77.57781247419872,
+      "kind": "place"
+    },
+    {
+      "id": "n16",
+      "name": "Intersection 16",
+      "aliases": [],
+      "lat": 12.965782106056896,
+      "lon": 77.58121644263271,
+      "kind": "junction"
+    },
+    {
+      "id": "n17",
+      "name": "Intersection 17",
+      "aliases": [],
+      "lat": 12.965760268931334,
+      "lon": 77.58470674096469,
+      "kind": "junction"
+    },
+    {
+      "id": "n18",
+      "name": "Port Gate",
+      "aliases": [
+        "port",
+        "gate"
+      ],
+      "lat": 12.965883849455146,
+      "lon": 77.58833496360329,
+      "kind": "place"
+    },
+    {
+      "id": "n19",
+      "name": "Intersection 19",
+      "aliases": [],
+      "lat": 12.966077885340878,
+      "lon": 77.59208783700055,
+      "kind": "junction"
+    },
+    {
+      "id": "n20",
+      "name": "North Campus",
+      "aliases": [
+        "campus",
+        "university"
+      ],
+      "lat": 12.986224677023953,
+      "lon": 77.57801869071203,
+      "kind": "place"
+    },
+    {
+      "id": "n21",
+      "name": "Intersection 21",
+      "aliases": [],
+      "lat": 12.966224677023952,
+      "lon": 77.59589346240905,
+      "kind": "junction"
+    },
+    {
+      "id": "n22",
+      "name": "Intersection 22",
+      "aliases": [],
+      "lat": 12.966235182639169,
+      "lon": 77.59965513098618,
+      "kind": "junction"
+    },
+    {
+      "id": "n23",
+      "name": "Intersection 23",
+      "aliases": [],
+      "lat": 12.970227324356706,
+      "lon": 77.56727278922804,
+      "kind": "junction"
+    },
+    {
+      "id": "n24",
+      "name": "Intersection 24",
+      "aliases": [],
+      "lat": 12.969889369889177,
+      "lon": 77.57412333766938,
+      "kind": "junction"
+    },
+    {
+      "id": "n25",
+      "name": "Intersection 25",
+      "aliases": [],
+      "lat": 12.969762099481528,
+      "lon": 77.57755451686668,
+      "kind": "junction"
+    },
+    {
+      "id": "n26",
+      "name": "Intersection 26",
+      "aliases": [],
+      "lat": 12.96977913633607,
+      "lon": 77.58110115061734,
+      "kind": "junction"
+    },
+    {
+      "id": "n27",
+      "name": "Foundry Market",
+      "aliases": [
+        "market",
+        "foundry"
+      ],
+      "lat": 12.969930146125451,
+      "lon": 77.58478833790232,
+      "kind": "place"
+    },
+    {
+      "id": "n28",
+      "name": "Intersection 28",
+      "aliases": [],
+      "lat": 12.970123528337785,
+      "lon": 77.58857507317916,
+      "kind": "junction"
+    },
+    {
+      "id": "n29",
+      "name": "Intersection 29",
+      "aliases": [],
+      "lat": 12.970241979918008,
+      "lon": 77.59237353192931,
+      "kind": "junction"
+    },
+    {
+      "id": "n30",
+      "name": "Willow Court",
+      "aliases": [
+        "willow"
+      ],
+      "lat": 12.970213649727024,
+      "lon": 77.59609037590161,
+      "kind": "place"
+    },
+    {
+      "id": "n31",
+      "name": "Intersection 31",
+      "aliases": [],
+      "lat": 12.970055722478525,
+      "lon": 77.59967065155011,
+      "kind": "junction"
+    },
+    {
+      "id": "n32",
+      "name": "Intersection 32",
+      "aliases": [],
+      "lat": 12.975035280002015,
+      "lon": 77.56704233600242,
+      "kind": "junction"
+    },
+    {
+      "id": "n33",
+      "name": "Intersection 33",
+      "aliases": [],
+      "lat": 12.974847035527263,
+      "lon": 77.57044104915772,
+      "kind": "junction"
+    },
+    {
+      "id": "n34",
+      "name": "Orchard Market",
+      "aliases": [
+        "market"
+      ],
+      "lat": 12.97475157724909,
+      "lon": 77.57391451937782,
+      "kind": "place"
+    },
+    {
+      "id": "n35",
+      "name": "Intersection 35",
+      "aliases": [],
+      "lat": 12.97480680887811,
+      "lon": 77.5775222555953,
+      "kind": "junction"
+    },
+    {
+      "id": "n36",
+      "name": "Intersection 36",
+      "aliases": [],
+      "lat": 12.974979227649296,
+      "lon": 77.58126061934617,
+      "kind": "junction"
+    },
+    {
+      "id": "n37",
+      "name": "Mill Square",
+      "aliases": [
+        "mill"
+      ],
+      "lat": 12.97516424664968,
+      "lon": 77.58506453599642,
+      "kind": "place"
+    },
+    {
+      "id": "n38",
+      "name": "Intersection 38",
+      "aliases": [],
+      "lat": 12.975249635836343,
+      "lon": 77.58883810035915,
+      "kind": "junction"
+    },
+    {
+      "id": "n39",
+      "name": "Westfield Court",
+      "aliases": [
+        "westfield"
+      ],
+      "lat": 12.975183599274468,
+      "lon": 77.59249968240255,
+      "kind": "place"
+    },
+    {
+      "id": "n40",
+      "name": "Intersection 40",
+      "aliases": [],
+      "lat": 12.975006193856363,
+      "lon": 77.59602031912937,
+      "kind": "junction"
+    },
+    {
+      "id": "n41",
+      "name": "Intersection 41",
+      "aliases": [],
+      "lat": 12.974825031328102,
+      "lon": 77.59943733632704,
+      "kind": "junction"
+    },
+    {
+      "id": "n42",
+      "name": "Intersection 42",
+      "aliases": [],
+      "lat": 12.979810799376173,
+      "lon": 77.5667729592514,
+      "kind": "junction"
+    },
+    {
+      "id": "n43",
+      "name": "Cedar Heights",
+      "aliases": [
+        "cedar"
+      ],
+      "lat": 12.979750958847792,
+      "lon": 77.57030002302272,
+      "kind": "place"
+    },
+    {
+      "id": "n44",
+      "name": "Intersection 44",
+      "aliases": [],
+      "lat": 12.979842183340532,
+      "lon": 77.57396817065373,
+      "kind": "junction"
+    },
+    {
+      "id": "n45",
+      "name": "St. Anne Hospital",
+      "aliases": [
+        "hospital",
+        "clinic"
+      ],
+      "lat": 12.980029137301212,
+      "lon": 77.57774535124871,
+      "kind": "place"
+    },
+    {
+      "id": "n46",
+      "name": "Intersection 46",
+      "aliases": [],
+      "lat": 12.980198416965962,
+      "lon": 77.58154823400533,
+      "kind": "junction"
+    },
+    {
+      "id": "n47",
+      "name": "Intersection 47",
+      "aliases": [],
+      "lat": 12.980247339561656,
+      "lon": 77.58528139999302,
+      "kind": "junction"
+    },
+    {
+      "id": "n48",
+      "name": "Intersection 48",
+      "aliases": [],
+      "lat": 12.980146229298223,
+      "lon": 77.588882219167,
+      "kind": "junction"
+    },
+    {
+      "id": "n49",
+      "name": "Intersection 49",
+      "aliases": [],
+      "lat": 12.979956418304695,
+      "lon": 77.59235030625693,
+      "kind": "junction"
+    },
+    {
+      "id": "n50",
+      "name": "Intersection 50",
+      "aliases": [],
+      "lat": 12.97979304338273,
+      "lon": 77.59574770196564,
+      "kind": "junction"
+    },
+    {
+      "id": "n51",
+      "name": "Grove Park",
+      "aliases": [
+        "park"
+      ],
+      "lat": 12.979755205567713,
+      "lon": 77.59916969425706,
+      "kind": "place"
+    },
+    {
+      "id": "n52",
+      "name": "North Ridge",
+      "aliases": [
+        "ridge"
+      ],
+      "lat": 12.985760268931335,
+      "lon": 77.56671232271759,
+      "kind": "place"
+    },
+    {
+      "id": "n53",
+      "name": "Intersection 53",
+      "aliases": [],
+      "lat": 12.985883849455147,
+      "lon": 77.57043479433722,
+      "kind": "junction"
+    },
+    {
+      "id": "n54",
+      "name": "Intersection 54",
+      "aliases": [],
+      "lat": 12.98607788534088,
+      "lon": 77.57423496476144,
+      "kind": "junction"
+    },
+    {
+      "id": "n55",
+      "name": "Riverside Library",
+      "aliases": [
+        "library"
+      ],
+      "lat": 12.98623518263917,
+      "lon": 77.5816995630036,
+      "kind": "place"
+    },
+    {
+      "id": "n56",
+      "name": "Intersection 56",
+      "aliases": [],
+      "lat": 12.986103029621312,
+      "lon": 77.58523954613378,
+      "kind": "junction"
+    },
+    {
+      "id": "n57",
+      "name": "Terrace Gardens",
+      "aliases": [
+        "gardens"
+      ],
+      "lat": 12.985908380217687,
+      "lon": 77.58866686697424,
+      "kind": "place"
+    },
+    {
+      "id": "n58",
+      "name": "Intersection 58",
+      "aliases": [],
+      "lat": 12.985769306144597,
+      "lon": 77.59206273923186,
+      "kind": "junction"
+    },
+    {
+      "id": "n59",
+      "name": "Hillview Estate",
+      "aliases": [
+        "hillview"
+      ],
+      "lat": 12.985770167868585,
+      "lon": 77.59552316737351,
+      "kind": "place"
+    },
+    {
+      "id": "n60",
+      "name": "Intersection 60",
+      "aliases": [],
+      "lat": 12.985910442679442,
+      "lon": 77.59911379422502,
+      "kind": "junction"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "from": "n02",
+      "to": "n03",
+      "name": "Dock Road",
+      "length_m": 412,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e002",
+      "from": "n03",
+      "to": "n02",
+      "name": "Dock Road",
+      "length_m": 412,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e003",
+      "from": "n03",
+      "to": "n04",
+      "name": "Dock Road",
+      "length_m": 402,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e004",
+      "from": "n04",
+      "to": "n03",
+      "name": "Dock Road",
+      "length_m": 402,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e005",
+      "from": "n04",
+      "to": "n05",
+      "name": "Dock Road",
+      "length_m": 387,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e006",
+      "from": "n05",
+      "to": "n04",
+      "name": "Dock Road",
+      "length_m": 387,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e007",
+      "from": "n05",
+      "to": "n06",
+      "name": "Dock Road",
+      "length_m": 374,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e008",
+      "from": "n06",
+      "to": "n05",
+      "name": "Dock Road",
+      "length_m": 374,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e009",
+      "from": "n06",
+      "to": "n07",
+      "name": "Dock Road",
+      "length_m": 369,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e010",
+      "from": "n07",
+      "to": "n06",
+      "name": "Dock Road",
+      "length_m": 369,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e011",
+      "from": "n07",
+      "to": "n08",
+      "name": "Dock Road",
+      "length_m": 374,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e012",
+      "from": "n08",
+      "to": "n07",
+      "name": "Dock Road",
+      "length_m": 374,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e013",
+      "from": "n08",
+      "to": "n09",
+      "name": "Dock Road",
+      "length_m": 387,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e014",
+      "from": "n09",
+      "to": "n08",
+      "name": "Dock Road",
+      "length_m": 387,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e015",
+      "from": "n09",
+      "to": "n10",
+      "name": "Dock Road",
+      "length_m": 403,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e016",
+      "from": "n10",
+      "to": "n09",
+      "name": "Dock Road",
+      "length_m": 403,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e017",
+      "from": "n10",
+      "to": "n11",
+      "name": "Dock Road",
+      "length_m": 412,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e018",
+      "from": "n11",
+      "to": "n10",
+      "name": "Dock Road",
+      "length_m": 412,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e019",
+      "from": "n12",
+      "to": "n13",
+      "name": "Market Street",
+      "length_m": 395,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e020",
+      "from": "n13",
+      "to": "n12",
+      "name": "Market Street",
+      "length_m": 395,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e021",
+      "from": "n13",
+      "to": "n14",
+      "name": "Market Street",
+      "length_m": 381,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e022",
+      "from": "n14",
+      "to": "n13",
+      "name": "Market Street",
+      "length_m": 381,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e023",
+      "from": "n14",
+      "to": "n15",
+      "name": "Market Street",
+      "length_m": 371,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e024",
+      "from": "n15",
+      "to": "n14",
+      "name": "Market Street",
+      "length_m": 371,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e025",
+      "from": "n15",
+      "to": "n16",
+      "name": "Market Street",
+      "length_m": 370,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e026",
+      "from": "n16",
+      "to": "n15",
+      "name": "Market Street",
+      "length_m": 370,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e027",
+      "from": "n16",
+      "to": "n17",
+      "name": "Market Street",
+      "length_m": 379,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e028",
+      "from": "n17",
+      "to": "n16",
+      "name": "Market Street",
+      "length_m": 379,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e029",
+      "from": "n17",
+      "to": "n18",
+      "name": "Market Street",
+      "length_m": 394,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e030",
+      "from": "n18",
+      "to": "n17",
+      "name": "Market Street",
+      "length_m": 394,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e031",
+      "from": "n18",
+      "to": "n19",
+      "name": "Market Street",
+      "length_m": 408,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e032",
+      "from": "n19",
+      "to": "n18",
+      "name": "Market Street",
+      "length_m": 408,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e033",
+      "from": "n19",
+      "to": "n21",
+      "name": "Market Street",
+      "length_m": 413,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e034",
+      "from": "n21",
+      "to": "n19",
+      "name": "Market Street",
+      "length_m": 413,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e035",
+      "from": "n21",
+      "to": "n22",
+      "name": "Market Street",
+      "length_m": 408,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e036",
+      "from": "n22",
+      "to": "n21",
+      "name": "Market Street",
+      "length_m": 408,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e037",
+      "from": "n23",
+      "to": "n01",
+      "name": "Quay Street",
+      "length_m": 375,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e038",
+      "from": "n01",
+      "to": "n23",
+      "name": "Quay Street",
+      "length_m": 375,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e039",
+      "from": "n01",
+      "to": "n24",
+      "name": "Quay Street",
+      "length_m": 369,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e040",
+      "from": "n24",
+      "to": "n01",
+      "name": "Quay Street",
+      "length_m": 369,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e041",
+      "from": "n24",
+      "to": "n25",
+      "name": "Quay Street",
+      "length_m": 373,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e042",
+      "from": "n25",
+      "to": "n24",
+      "name": "Quay Street",
+      "length_m": 373,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e043",
+      "from": "n25",
+      "to": "n26",
+      "name": "Quay Street",
+      "length_m": 385,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e044",
+      "from": "n26",
+      "to": "n25",
+      "name": "Quay Street",
+      "length_m": 385,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e045",
+      "from": "n26",
+      "to": "n27",
+      "name": "Quay Street",
+      "length_m": 400,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e046",
+      "from": "n27",
+      "to": "n26",
+      "name": "Quay Street",
+      "length_m": 400,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e047",
+      "from": "n27",
+      "to": "n28",
+      "name": "Quay Street",
+      "length_m": 411,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e048",
+      "from": "n28",
+      "to": "n27",
+      "name": "Quay Street",
+      "length_m": 411,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e049",
+      "from": "n28",
+      "to": "n29",
+      "name": "Quay Street",
+      "length_m": 412,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e050",
+      "from": "n29",
+      "to": "n28",
+      "name": "Quay Street",
+      "length_m": 412,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e051",
+      "from": "n29",
+      "to": "n30",
+      "name": "Quay Street",
+      "length_m": 403,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e052",
+      "from": "n30",
+      "to": "n29",
+      "name": "Quay Street",
+      "length_m": 403,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e053",
+      "from": "n30",
+      "to": "n31",
+      "name": "Quay Street",
+      "length_m": 389,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e054",
+      "from": "n31",
+      "to": "n30",
+      "name": "Quay Street",
+      "length_m": 389,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e055",
+      "from": "n32",
+      "to": "n33",
+      "name": "Northbank Avenue",
+      "length_m": 369,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e056",
+      "from": "n33",
+      "to": "n32",
+      "name": "Northbank Avenue",
+      "length_m": 369,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e057",
+      "from": "n33",
+      "to": "n34",
+      "name": "Northbank Avenue",
+      "length_m": 377,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e058",
+      "from": "n34",
+      "to": "n33",
+      "name": "Northbank Avenue",
+      "length_m": 377,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e059",
+      "from": "n34",
+      "to": "n35",
+      "name": "Northbank Avenue",
+      "length_m": 391,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e060",
+      "from": "n35",
+      "to": "n34",
+      "name": "Northbank Avenue",
+      "length_m": 391,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e061",
+      "from": "n35",
+      "to": "n36",
+      "name": "Northbank Avenue",
+      "length_m": 406,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e062",
+      "from": "n36",
+      "to": "n35",
+      "name": "Northbank Avenue",
+      "length_m": 406,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e063",
+      "from": "n36",
+      "to": "n37",
+      "name": "Northbank Avenue",
+      "length_m": 413,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e064",
+      "from": "n37",
+      "to": "n36",
+      "name": "Northbank Avenue",
+      "length_m": 413,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e065",
+      "from": "n37",
+      "to": "n38",
+      "name": "Northbank Avenue",
+      "length_m": 409,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e066",
+      "from": "n38",
+      "to": "n37",
+      "name": "Northbank Avenue",
+      "length_m": 409,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e067",
+      "from": "n38",
+      "to": "n39",
+      "name": "Northbank Avenue",
+      "length_m": 397,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e068",
+      "from": "n39",
+      "to": "n38",
+      "name": "Northbank Avenue",
+      "length_m": 397,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e069",
+      "from": "n39",
+      "to": "n40",
+      "name": "Northbank Avenue",
+      "length_m": 382,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e070",
+      "from": "n40",
+      "to": "n39",
+      "name": "Northbank Avenue",
+      "length_m": 382,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e071",
+      "from": "n40",
+      "to": "n41",
+      "name": "Northbank Avenue",
+      "length_m": 371,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e072",
+      "from": "n41",
+      "to": "n40",
+      "name": "Northbank Avenue",
+      "length_m": 371,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e073",
+      "from": "n42",
+      "to": "n43",
+      "name": "Cedar Street",
+      "length_m": 383,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e074",
+      "from": "n43",
+      "to": "n42",
+      "name": "Cedar Street",
+      "length_m": 383,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e075",
+      "from": "n43",
+      "to": "n44",
+      "name": "Cedar Street",
+      "length_m": 398,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e076",
+      "from": "n44",
+      "to": "n43",
+      "name": "Cedar Street",
+      "length_m": 398,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e077",
+      "from": "n44",
+      "to": "n45",
+      "name": "Cedar Street",
+      "length_m": 410,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e078",
+      "from": "n45",
+      "to": "n44",
+      "name": "Cedar Street",
+      "length_m": 410,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e079",
+      "from": "n45",
+      "to": "n46",
+      "name": "Cedar Street",
+      "length_m": 413,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e080",
+      "from": "n46",
+      "to": "n45",
+      "name": "Cedar Street",
+      "length_m": 413,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e081",
+      "from": "n46",
+      "to": "n47",
+      "name": "Cedar Street",
+      "length_m": 405,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e082",
+      "from": "n47",
+      "to": "n46",
+      "name": "Cedar Street",
+      "length_m": 405,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e083",
+      "from": "n47",
+      "to": "n48",
+      "name": "Cedar Street",
+      "length_m": 391,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e084",
+      "from": "n48",
+      "to": "n47",
+      "name": "Cedar Street",
+      "length_m": 391,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e085",
+      "from": "n48",
+      "to": "n49",
+      "name": "Cedar Street",
+      "length_m": 377,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e086",
+      "from": "n49",
+      "to": "n48",
+      "name": "Cedar Street",
+      "length_m": 377,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e087",
+      "from": "n49",
+      "to": "n50",
+      "name": "Cedar Street",
+      "length_m": 369,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e088",
+      "from": "n50",
+      "to": "n49",
+      "name": "Cedar Street",
+      "length_m": 369,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e089",
+      "from": "n50",
+      "to": "n51",
+      "name": "Cedar Street",
+      "length_m": 371,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e090",
+      "from": "n51",
+      "to": "n50",
+      "name": "Cedar Street",
+      "length_m": 371,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e091",
+      "from": "n52",
+      "to": "n53",
+      "name": "Ridge Expressway",
+      "length_m": 404,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e092",
+      "from": "n53",
+      "to": "n52",
+      "name": "Ridge Expressway",
+      "length_m": 404,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e093",
+      "from": "n53",
+      "to": "n54",
+      "name": "Ridge Expressway",
+      "length_m": 413,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e094",
+      "from": "n54",
+      "to": "n53",
+      "name": "Ridge Expressway",
+      "length_m": 413,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e095",
+      "from": "n54",
+      "to": "n20",
+      "name": "Ridge Expressway",
+      "length_m": 411,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e096",
+      "from": "n20",
+      "to": "n54",
+      "name": "Ridge Expressway",
+      "length_m": 411,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e097",
+      "from": "n20",
+      "to": "n55",
+      "name": "Ridge Expressway",
+      "length_m": 399,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e098",
+      "from": "n55",
+      "to": "n20",
+      "name": "Ridge Expressway",
+      "length_m": 399,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e099",
+      "from": "n55",
+      "to": "n56",
+      "name": "Ridge Expressway",
+      "length_m": 384,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e100",
+      "from": "n56",
+      "to": "n55",
+      "name": "Ridge Expressway",
+      "length_m": 384,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e101",
+      "from": "n56",
+      "to": "n57",
+      "name": "Ridge Expressway",
+      "length_m": 372,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e102",
+      "from": "n57",
+      "to": "n56",
+      "name": "Ridge Expressway",
+      "length_m": 372,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e103",
+      "from": "n57",
+      "to": "n58",
+      "name": "Ridge Expressway",
+      "length_m": 369,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e104",
+      "from": "n58",
+      "to": "n57",
+      "name": "Ridge Expressway",
+      "length_m": 369,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e105",
+      "from": "n58",
+      "to": "n59",
+      "name": "Ridge Expressway",
+      "length_m": 375,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e106",
+      "from": "n59",
+      "to": "n58",
+      "name": "Ridge Expressway",
+      "length_m": 375,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e107",
+      "from": "n59",
+      "to": "n60",
+      "name": "Ridge Expressway",
+      "length_m": 390,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e108",
+      "from": "n60",
+      "to": "n59",
+      "name": "Ridge Expressway",
+      "length_m": 390,
+      "free_flow_kph": 100,
+      "road_class": "highway",
+      "one_way": false
+    },
+    {
+      "id": "e109",
+      "from": "n03",
+      "to": "n13",
+      "name": "Station Road",
+      "length_m": 564,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e110",
+      "from": "n13",
+      "to": "n03",
+      "name": "Station Road",
+      "length_m": 564,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e111",
+      "from": "n05",
+      "to": "n15",
+      "name": "Mariner Street",
+      "length_m": 531,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e112",
+      "from": "n15",
+      "to": "n05",
+      "name": "Mariner Street",
+      "length_m": 531,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e113",
+      "from": "n15",
+      "to": "n25",
+      "name": "Mariner Street",
+      "length_m": 427,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e114",
+      "from": "n25",
+      "to": "n15",
+      "name": "Mariner Street",
+      "length_m": 427,
+      "free_flow_kph": 35,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e115",
+      "from": "n08",
+      "to": "n18",
+      "name": "Port Road",
+      "length_m": 571,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e116",
+      "from": "n18",
+      "to": "n08",
+      "name": "Port Road",
+      "length_m": 571,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e117",
+      "from": "n18",
+      "to": "n28",
+      "name": "Port Road",
+      "length_m": 473,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e118",
+      "from": "n28",
+      "to": "n18",
+      "name": "Port Road",
+      "length_m": 473,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e119",
+      "from": "n11",
+      "to": "n22",
+      "name": "Willow Avenue",
+      "length_m": 561,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e120",
+      "from": "n22",
+      "to": "n11",
+      "name": "Willow Avenue",
+      "length_m": 561,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e121",
+      "from": "n22",
+      "to": "n31",
+      "name": "Willow Avenue",
+      "length_m": 425,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e122",
+      "from": "n31",
+      "to": "n22",
+      "name": "Willow Avenue",
+      "length_m": 425,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e123",
+      "from": "n32",
+      "to": "n42",
+      "name": "Orchard Road",
+      "length_m": 532,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e124",
+      "from": "n42",
+      "to": "n32",
+      "name": "Orchard Road",
+      "length_m": 532,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e125",
+      "from": "n42",
+      "to": "n52",
+      "name": "Orchard Road",
+      "length_m": 662,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e126",
+      "from": "n52",
+      "to": "n42",
+      "name": "Orchard Road",
+      "length_m": 662,
+      "free_flow_kph": 40,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e127",
+      "from": "n35",
+      "to": "n45",
+      "name": "Campus Drive",
+      "length_m": 582,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e128",
+      "from": "n45",
+      "to": "n35",
+      "name": "Campus Drive",
+      "length_m": 582,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e129",
+      "from": "n45",
+      "to": "n20",
+      "name": "Campus Drive",
+      "length_m": 690,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e130",
+      "from": "n20",
+      "to": "n45",
+      "name": "Campus Drive",
+      "length_m": 690,
+      "free_flow_kph": 55,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e131",
+      "from": "n38",
+      "to": "n48",
+      "name": "Terrace Road",
+      "length_m": 545,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e132",
+      "from": "n48",
+      "to": "n38",
+      "name": "Terrace Road",
+      "length_m": 545,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e133",
+      "from": "n48",
+      "to": "n57",
+      "name": "Terrace Road",
+      "length_m": 642,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e134",
+      "from": "n57",
+      "to": "n48",
+      "name": "Terrace Road",
+      "length_m": 642,
+      "free_flow_kph": 45,
+      "road_class": "arterial",
+      "one_way": false
+    },
+    {
+      "id": "e-bridge-n",
+      "from": "n24",
+      "to": "n34",
+      "name": "Harbor Bridge",
+      "length_m": 542,
+      "free_flow_kph": 76,
+      "road_class": "bridge",
+      "one_way": false
+    },
+    {
+      "id": "e-bridge-s",
+      "from": "n34",
+      "to": "n24",
+      "name": "Harbor Bridge",
+      "length_m": 542,
+      "free_flow_kph": 76,
+      "road_class": "bridge",
+      "one_way": false
+    },
+    {
+      "id": "e137",
+      "from": "n27",
+      "to": "n37",
+      "name": "Mill Causeway",
+      "length_m": 583,
+      "free_flow_kph": 65,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e138",
+      "from": "n37",
+      "to": "n27",
+      "name": "Mill Causeway",
+      "length_m": 583,
+      "free_flow_kph": 65,
+      "road_class": "local",
+      "one_way": false
+    },
+    {
+      "id": "e139",
+      "from": "n06",
+      "to": "n16",
+      "name": "Foundry Lane",
+      "length_m": 535,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": true
+    },
+    {
+      "id": "e140",
+      "from": "n17",
+      "to": "n07",
+      "name": "Customs Lane",
+      "length_m": 551,
+      "free_flow_kph": 30,
+      "road_class": "local",
+      "one_way": true
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "clear-afternoon",
+      "name": "Clear afternoon",
+      "band": "midday",
+      "closures": []
+    },
+    {
+      "id": "evening-peak",
+      "name": "Evening peak",
+      "band": "peak_pm",
+      "closures": []
+    },
+    {
+      "id": "bridge-closed",
+      "name": "Harbor Bridge closed",
+      "band": null,
+      "closures": [
+        "e-bridge-n",
+        "e-bridge-s"
+      ]
+    },
+    {
+      "id": "bridge-closed-evening",
+      "name": "Harbor Bridge closed during evening peak",
+      "band": "peak_pm",
+      "closures": [
+        "e-bridge-n",
+        "e-bridge-s"
+      ]
+    }
+  ]
+}
