@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Sandhani — Route planner</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="workspace">
+    <section id="map-region" tabindex="-1" class="map-frame" aria-label="Sandhani City map">
+      <svg id="map" aria-label="Street map of Sandhani City" xmlns="http://www.w3.org/2000/svg">
+        <g id="world">
+          <g id="terrain"></g>
+          <g id="roads"></g>
+          <path id="route-casing"></path>
+          <path id="route-path"></path>
+          <path id="step-highlight"></path>
+          <g id="map-labels"></g>
+          <g id="road-targets" aria-hidden="true"></g>
+          <g id="markers"></g>
+        </g>
+      </svg>
+      <div class="map-caption">
+        <strong>Sandhani</strong>
+        <label class="visually-hidden" for="city-picker">City map</label>
+        <select id="city-picker" aria-label="City map" disabled><option value="sandhani-city">Sandhani City</option></select>
+      </div>
+      <div class="map-tools" aria-label="Map controls">
+        <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+        <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+        <button id="fit" type="button" aria-label="Fit city">Fit</button>
+      </div>
+      <div class="map-footer">
+        <a id="map-attribution" class="map-legend" href="https://www.openstreetmap.org/copyright" hidden>© OpenStreetMap contributors</a>
+        <span id="schematic-caption" class="map-legend">Schematic map · not a street atlas</span>
+        <div id="scale" class="scale"></div>
+      </div>
+      <button id="jump-planner" class="map-jump" type="button">Plan a trip</button>
+      <p id="map-message" class="map-message" role="status"></p>
+    </section>
+    <section class="panel" aria-labelledby="plan-heading">
+      <header class="planner-heading">
+        <h1 id="plan-heading" tabindex="-1">Plan a trip</h1>
+        <button id="example-trip" type="button">Try an example</button>
+      </header>
+      <p id="pilot-note" class="pilot-note" hidden>Preview of mapped roads. Traffic is estimated and some turn restrictions are unmodeled.</p>
+      <form id="planner">
+        <div class="endpoints">
+          <div class="search">
+            <label for="origin">From</label>
+            <input id="origin" class="origin-input" role="combobox" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-autocomplete="list" aria-controls="origin-options" aria-expanded="false" autocomplete="off" placeholder="Search a starting place">
+            <ul id="origin-options" class="suggestions" role="listbox" hidden></ul>
+          </div>
+          <button type="button" id="swap" class="swap" aria-label="Swap origin and destination" title="Swap origin and destination">Swap</button>
+          <div class="search">
+            <label for="destination">To</label>
+            <input id="destination" class="destination-input" role="combobox" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-autocomplete="list" aria-controls="destination-options" aria-expanded="false" autocomplete="off" placeholder="Search a destination">
+            <ul id="destination-options" class="suggestions" role="listbox" hidden></ul>
+          </div>
+        </div>
+        <div id="recents" class="recents" hidden>
+          <h3>Recent</h3>
+          <div id="recent-list"></div>
+        </div>
+        <fieldset>
+          <legend>Route preference</legend>
+          <div id="objective" class="segments">
+            <label><input type="radio" name="objective" value="fastest" checked><span>Fastest</span></label>
+            <label><input type="radio" name="objective" value="shortest"><span>Shortest</span></label>
+          </div>
+        </fieldset>
+        <label for="departure">Leave</label>
+        <div class="departure">
+          <select id="departure">
+            <option value="now">Now</option>
+            <option value="clock">Set a clock time</option>
+            <option value="night">Night</option>
+            <option value="midday">Midday</option>
+            <option value="peak_am">Morning peak</option>
+            <option value="peak_pm">Evening peak</option>
+          </select>
+          <input id="clock" type="time" value="17:30" aria-label="Departure time" hidden>
+        </div>
+        <p id="traffic-note" class="traffic-note"></p>
+        <button id="plan" class="primary" type="submit">Show route</button>
+        <div class="actions">
+          <button id="copy-link" type="button" hidden>Copy link</button>
+          <button id="clear" type="button">Clear</button>
+        </div>
+      </form>
+      <p id="status" tabindex="-1" class="status" role="status">Choose a start and an end. You can type a place or click the map.</p>
+      <p id="restore-note" class="traffic-note" role="status" hidden></p>
+      <section id="result" class="result" aria-label="Route result" hidden>
+        <h2 id="trip-summary" tabindex="-1"></h2>
+        <div id="route-options" class="route-options" role="group" aria-label="Compare route options" hidden></div>
+        <button id="jump-map" type="button">View route on map</button>
+        <p id="reason" class="reason"></p>
+        <dl id="stats" class="stats"></dl>
+        <p id="alternate" class="alternate" hidden></p>
+        <h3 id="directions-heading">Directions</h3>
+        <ol id="steps" class="steps" aria-labelledby="directions-heading"></ol>
+      </section>
+      <details id="conditions" class="conditions">
+        <summary>Traffic and road conditions</summary>
+        <div id="presets" class="presets" role="group" aria-label="Traffic presets"></div>
+        <div id="selected-road" class="selected-road" hidden></div>
+        <ul id="condition-list" class="condition-list"></ul>
+        <button id="clear-conditions" type="button">Clear conditions</button>
+      </details>
+      <details id="search-details">
+        <summary>How this route was searched</summary>
+        <div id="search-body" class="search-body"></div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>
